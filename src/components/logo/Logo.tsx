@@ -1,11 +1,11 @@
 const Logo: React.FC = () => {
   return (
-    <div>
+    <div >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="200"
         viewBox="0 0 150 67.5"
-        height="90"
+        height="40"
         version="1.0"
       >
         <defs>
