@@ -27,10 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} mx-auto max-w-[1200px] antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} px-[calc((100dvw-1200px)/2)] antialiased`}
       >
         <BigScreenNavbar />
-        {children}
+        <div className="mx-auto max-w-[1200px]">{children}</div>
       </body>
     </html>
   );

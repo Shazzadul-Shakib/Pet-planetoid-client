@@ -7,9 +7,11 @@ const BigScreenNavbar: React.FC = () => {
   return (
     <div>
       <div className="flex items-center justify-between py-2">
-        <Logo />
+        <div className="flex items-center">
+          <Logo />
+          <Searchbar />
+        </div>
         <NavigationItems />
-        <Searchbar />
       </div>
     </div>
   );

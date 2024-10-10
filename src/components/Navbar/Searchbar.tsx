@@ -3,8 +3,8 @@ import { Search } from "lucide-react";
 
 const Searchbar: React.FC = () => {
   return (
-    <div className="relative ml-auto flex-1 md:grow-0">
-      <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+    <div className="relative ml-auto md:grow-0">
+      <Search className="text-muted-foreground absolute left-2.5 top-2.5 h-4 w-4" />
       <Input
         type="search"
         placeholder="Search..."
