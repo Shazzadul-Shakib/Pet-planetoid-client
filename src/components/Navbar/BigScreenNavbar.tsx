@@ -5,7 +5,7 @@ import { ModeToggle } from "./ThemeToggler";
 
 const BigScreenNavbar: React.FC = () => {
   return (
-    <div className="px-[calc((100dvw-1200px)/2)] shadow-md">
+    <div className="p-10 xl:px-[calc((100dvw-1200px)/2)] shadow-md">
       <div className="flex items-center justify-between py-2">
         <div className="flex items-center">
           <Logo />
