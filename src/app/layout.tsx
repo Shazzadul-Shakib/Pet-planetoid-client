@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import BigScreenNavbar from "@/components/Navbar/BigScreenNavbar";
 import { ThemeProvider } from "@/components/theme/theme-provider";
+import SmallScreenNavbar from "@/components/Navbar/SmallScreenNavbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} relative h-[100dvh] antialiased`}
       >
         <ThemeProvider
           attribute="class"
@@ -37,8 +38,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-            <BigScreenNavbar />
-            <div className="mx-auto max-w-[1200px]">{children}</div>
+          <BigScreenNavbar />
+          <div className="mx-auto max-w-[1200px]">{children}</div>
+          <div className="absolute bottom-0 left-0 block w-full md:hidden">
+            <SmallScreenNavbar />
+          </div>
         </ThemeProvider>
       </body>
     </html>
