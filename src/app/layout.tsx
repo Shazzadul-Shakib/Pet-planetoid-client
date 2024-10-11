@@ -1,7 +1,9 @@
+// RootLayout.tsx
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import BigScreenNavbar from "@/components/Navbar/BigScreenNavbar";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,10 +29,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} px-[calc((100dvw-1200px)/2)] antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <BigScreenNavbar />
-        <div className="mx-auto max-w-[1200px]">{children}</div>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+            <BigScreenNavbar />
+            <div className="mx-auto max-w-[1200px]">{children}</div>
+        </ThemeProvider>
       </body>
     </html>
   );
