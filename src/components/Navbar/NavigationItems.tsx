@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const NavigationItems: React.FC = () => {
   return (
-    <div className="flex  items-center justify-end gap-14 text-xs">
+    <div className="mx-2 hidden items-center justify-end gap-8 text-xs md:flex lg:gap-14">
       {NavIcons.map((item) => (
         <Link
           href={item.path}
