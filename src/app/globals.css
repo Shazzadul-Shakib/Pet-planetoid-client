@@ -23,3 +23,6 @@ transition-duration: 200ms;
 .nav:hover::after{
   width: 100%;
 }
+.nav.active::after {
+  width: 100%;
+}
