@@ -8,7 +8,7 @@ const NavigationItems: React.FC = () => {
         <Link
           href={item.path}
           key={item.title}
-          className="flex flex-col items-center gap-1"
+          className="flex flex-col items-center gap-1 nav relative"
         >
           {item.icon}
           <span>{item.title}</span>
