@@ -1,4 +1,5 @@
 import Logo from "../logo/Logo";
+import Avatar from "./Avatar";
 import NavigationItems from "./NavigationItems";
 import Searchbar from "./Searchbar";
 import { ModeToggle } from "./ThemeToggler";
@@ -12,7 +13,10 @@ const BigScreenNavbar: React.FC = () => {
           <Searchbar />
         </div>
         <NavigationItems />
-        <ModeToggle />
+        <div className="flex items-center gap-3">
+          <ModeToggle />
+          <Avatar />
+        </div>
       </div>
     </div>
   );
