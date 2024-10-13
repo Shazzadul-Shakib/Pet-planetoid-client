@@ -4,24 +4,20 @@
 
 @layer base {
   :root {
-
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
 }
 
-.nav::after{
-content: "";
-height: 3px;
-width: 0%;
-background-color: #ee2b5a;
-position: absolute;
-left:0%;
-bottom: -7px;
-border-radius: 10px;
-transition-duration: 200ms;
-}
-.nav:hover::after{
-  width: 100%;
+.nav::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: #ee2b5a;
+  position: absolute;
+  left: 0%;
+  bottom: -7px;
+  border-radius: 10px;
+  transition-duration: 200ms;
 }
 .nav.active::after {
   width: 100%;
