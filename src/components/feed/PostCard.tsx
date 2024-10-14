@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Card, CardHeader } from "../ui/card";
+import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
 import { allIcons } from "@/icons/all-icons";
 
 const PostCard: React.FC = () => {
-  const { cancel, hTDots } = allIcons;
+  const { cancel, hTDots, outlinedHeart, comment } = allIcons;
   return (
     <div className="flex w-full justify-center py-4">
       <Card className="w-full max-w-[700px]">
@@ -23,11 +23,24 @@ const PostCard: React.FC = () => {
               <p className="text-xs">1h ago</p>
             </div>
           </div>
-          <div className="flex items-center gap-3">
-            <div>{hTDots}</div>
-            <div>{cancel}</div>
+          <div className="flex items-center gap-4">
+            <div className="cursor-pointer">{hTDots}</div>
+            <div className="cursor-pointer">{cancel}</div>
           </div>
         </CardHeader>
+        <CardContent></CardContent>
+        <CardFooter>
+          <div className="flex w-full items-center gap-6">
+            <div className="hover:bg-secondary flex flex-1 cursor-pointer items-center justify-center gap-3 rounded-md p-2">
+              {outlinedHeart}
+              <span className="font-semibold">Like</span>
+            </div>
+            <div className="hover:bg-secondary flex flex-1 cursor-pointer items-center justify-center gap-3 rounded-md p-2">
+              {comment}
+              <span className="font-semibold">Comment</span>
+            </div>
+          </div>
+        </CardFooter>
       </Card>
     </div>
   );
