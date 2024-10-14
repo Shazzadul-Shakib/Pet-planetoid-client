@@ -40,7 +40,7 @@ export default function RootLayout({
         >
           <BigScreenNavbar />
           <div className="mx-auto max-w-[1200px]">{children}</div>
-          <div className="absolute bottom-0 left-0 block w-full md:hidden">
+          <div className="fixed bottom-0 left-0 block w-full md:hidden bg-background">
             <SmallScreenNavbar />
           </div>
         </ThemeProvider>

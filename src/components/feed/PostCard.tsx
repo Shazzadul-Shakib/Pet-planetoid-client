@@ -6,7 +6,7 @@ import { Separator } from "../ui/separator";
 const PostCard: React.FC = () => {
   const { cancel, hTDots, outlinedHeart, comment } = allIcons;
   return (
-    <div className="flex w-full justify-center py-4">
+    <div className="flex w-full justify-center px-2 py-4 md:px-0">
       <Card className="w-full max-w-[700px]">
         <CardHeader className="-mt-2 flex flex-row justify-between">
           <div className="flex items-center gap-3">
@@ -34,7 +34,10 @@ const PostCard: React.FC = () => {
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
               maiores dignissimos quas, quasi dolores tempore. Autem nesciunt
-              distinctio ex esse...<span className="text-sm font-semibold hover:underline cursor-pointer">Show more</span>
+              distinctio ex esse...
+              <span className="cursor-pointer text-sm font-semibold hover:underline">
+                Show more
+              </span>
             </p>
           </div>
           <div>
