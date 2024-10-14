@@ -1,11 +1,12 @@
+import React from "react";
+
 const Logo: React.FC = () => {
   return (
-    <div>
+    <div className="m-0 p-0">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-[40px] w-24 sm:w-32 md:w-40 lg:w-48 xl:w-60"
+        className="h-[40px] w-auto sm:w-32 md:w-40 lg:w-48 xl:w-60"
         viewBox="0 0 150 67.5"
-        height="40"
         version="1.0"
       >
         <defs>
