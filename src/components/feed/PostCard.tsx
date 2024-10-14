@@ -29,7 +29,24 @@ const PostCard: React.FC = () => {
             <div className="cursor-pointer">{cancel}</div>
           </div>
         </CardHeader>
-        <CardContent></CardContent>
+        <CardContent>
+          <div className="my-2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+              maiores dignissimos quas, quasi dolores tempore. Autem nesciunt
+              distinctio ex esse...<span className="text-sm font-semibold hover:underline cursor-pointer">Show more</span>
+            </p>
+          </div>
+          <div>
+            <Image
+              className="mx-auto w-[70%] rounded py-4"
+              src="/cat.jpg"
+              width={400}
+              height={400}
+              alt="Avatar"
+            />
+          </div>
+        </CardContent>
         <CardFooter className="flex-col gap-2">
           <div className="flex w-full items-center justify-between px-2">
             <div className="text-muted-foreground text-xs">0 Likes</div>
