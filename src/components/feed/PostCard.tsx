@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
 import { allIcons } from "@/icons/all-icons";
+import { Separator } from "../ui/separator";
 
 const PostCard: React.FC = () => {
   const { cancel, hTDots, outlinedHeart, comment } = allIcons;
@@ -29,7 +30,12 @@ const PostCard: React.FC = () => {
           </div>
         </CardHeader>
         <CardContent></CardContent>
-        <CardFooter>
+        <CardFooter className="flex-col gap-2">
+          <div className="flex w-full items-center justify-between px-2">
+            <div className="text-muted-foreground text-xs">0 Likes</div>
+            <div className="text-muted-foreground text-xs">0 Comments</div>
+          </div>
+          <Separator />
           <div className="flex w-full items-center gap-6">
             <div className="hover:bg-secondary flex flex-1 cursor-pointer items-center justify-center gap-3 rounded-md p-2">
               {outlinedHeart}
