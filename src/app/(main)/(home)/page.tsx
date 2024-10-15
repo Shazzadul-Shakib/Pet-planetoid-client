@@ -4,6 +4,7 @@ const HomePage: React.FC = () => {
   return (
     <div className=" w-full mx-auto">
       <PostCard/>
+      <PostCard/>
     </div>
   );
 };

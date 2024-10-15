@@ -42,7 +42,7 @@ const PostCard: React.FC = () => {
           </div>
           <div>
             <Image
-              className="mx-auto w-[70%] rounded py-4"
+              className="mx-auto w-full h-[350px] object-contain rounded py-4"
               src="/cat.jpg"
               width={400}
               height={400}

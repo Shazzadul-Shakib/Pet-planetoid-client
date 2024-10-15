@@ -39,8 +39,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <BigScreenNavbar />
-          <div className="mx-auto max-w-[1200px]">{children}</div>
-          <div className="fixed bottom-0 left-0 block w-full md:hidden bg-background">
+          <div className="mx-auto mt-16 max-w-[1200px]">{children}</div>
+          <div className="fixed bottom-0 left-0 block w-full bg-background md:hidden">
             <SmallScreenNavbar />
           </div>
         </ThemeProvider>
