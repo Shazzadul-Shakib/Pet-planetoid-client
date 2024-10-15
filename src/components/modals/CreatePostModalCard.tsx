@@ -4,8 +4,9 @@ import { allIcons } from "@/icons/all-icons";
 import { Textarea } from "../ui/textarea";
 import { Separator } from "../ui/separator";
 import { Button } from "../ui/button";
+import { TCreatePostToggle } from "@/types";
 
-const CreatePostModalCard: React.FC = () => {
+const CreatePostModalCard: React.FC<TCreatePostToggle> = ({ toggle }) => {
   const { cancel, media } = allIcons;
   return (
     <Card className="relative min-h-[540px] w-11/12 max-w-[790px] rounded-lg p-3 shadow-lg">
@@ -25,7 +26,12 @@ const CreatePostModalCard: React.FC = () => {
           </div>
         </div>
         <div>
-          <div className="cursor-pointer">{cancel}</div>
+          <div
+            className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full hover:bg-secondary"
+            onClick={toggle}
+          >
+            {cancel}
+          </div>
         </div>
       </CardHeader>
       <CardContent>

@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "../ui/card";
 import Image from "next/image";
+import { TCreatePostToggle } from "@/types";
 
-const CreatePost: React.FC = () => {
+const CreatePost: React.FC<TCreatePostToggle> = ({ toggle }) => {
   return (
     <div className="flex w-full justify-center px-2 py-2 md:px-0">
       <Card className="flex w-full max-w-[700px] items-center gap-6 p-3 md:p-6">
@@ -18,6 +19,7 @@ const CreatePost: React.FC = () => {
         <Button
           className="md:text-md h-10 flex-1 justify-start rounded-full pl-5 text-sm md:h-12 md:pl-10"
           variant="secondary"
+          onClick={toggle}
         >
           Create a post User Name
         </Button>

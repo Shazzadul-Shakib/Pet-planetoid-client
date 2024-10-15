@@ -7,3 +7,5 @@ export type TModalProps = {
 export type TModalBodyProps = {
   modal: React.ReactNode;
 };
+export type TUseToggleReturn = [boolean, () => void];
+export type TCreatePostToggle = { toggle: () => void };
