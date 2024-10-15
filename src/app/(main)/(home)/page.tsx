@@ -1,5 +1,7 @@
 import CreatePost from "@/components/feed/CreatePost";
 import PostCard from "@/components/feed/PostCard";
+import CreatePostModalCard from "@/components/modals/CreatePostModalCard";
+import ModalBody from "@/components/modals/ModalBody";
 
 const HomePage: React.FC = () => {
   return (
@@ -7,6 +9,7 @@ const HomePage: React.FC = () => {
       <CreatePost/>
       <PostCard/>
       <PostCard/>
+      <ModalBody modal={<CreatePostModalCard/>}/>
     </div>
   );
 };
