@@ -6,7 +6,7 @@ import { Separator } from "../ui/separator";
 const PostCard: React.FC = () => {
   const { cancel, hTDots, outlinedHeart, comment } = allIcons;
   return (
-    <div className="flex w-full justify-center px-2 py-4 md:px-0">
+    <div className="flex w-full justify-center px-2 py-2 md:px-0">
       <Card className="w-full max-w-[700px]">
         <CardHeader className="-mt-2 flex flex-row justify-between">
           <div className="flex items-center gap-3">
@@ -42,26 +42,26 @@ const PostCard: React.FC = () => {
           </div>
           <div>
             <Image
-              className="mx-auto w-full h-[350px] object-contain rounded py-4"
+              className="mx-auto h-[350px] w-full max-w-[400px] rounded-lg object-cover object-center py-4"
               src="/cat.jpg"
               width={400}
-              height={400}
+              height={350}
               alt="Avatar"
             />
           </div>
         </CardContent>
         <CardFooter className="flex-col gap-2">
           <div className="flex w-full items-center justify-between px-2">
-            <div className="text-muted-foreground text-xs">0 Likes</div>
-            <div className="text-muted-foreground text-xs">0 Comments</div>
+            <div className="text-xs text-muted-foreground">0 Likes</div>
+            <div className="text-xs text-muted-foreground">0 Comments</div>
           </div>
           <Separator />
           <div className="flex w-full items-center gap-6">
-            <div className="hover:bg-secondary flex flex-1 cursor-pointer items-center justify-center gap-3 rounded-md p-2">
+            <div className="flex flex-1 cursor-pointer items-center justify-center gap-3 rounded-md p-2 hover:bg-secondary">
               {outlinedHeart}
               <span className="font-semibold">Like</span>
             </div>
-            <div className="hover:bg-secondary flex flex-1 cursor-pointer items-center justify-center gap-3 rounded-md p-2">
+            <div className="flex flex-1 cursor-pointer items-center justify-center gap-3 rounded-md p-2 hover:bg-secondary">
               {comment}
               <span className="font-semibold">Comment</span>
             </div>
