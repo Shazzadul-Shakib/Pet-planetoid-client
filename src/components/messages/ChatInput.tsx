@@ -6,9 +6,10 @@ import { allIcons } from "@/icons/all-icons";
 const ChatInput: React.FC = () => {
   const { cancel } = allIcons;
   return (
-    <div className="ml-auto bg-background pt-2 md:grow-0">
+    //pt-2
+    <div className="ml-auto bg-background md:grow-0">
       {/* Image preview section */}
-      <div className="relative m-2 h-[150px] w-[150px] rounded-lg">
+      <div className="relative m-2 hidden h-[150px] w-[150px] rounded-lg">
         <div className="absolute -right-2 -top-2 z-10 flex h-6 w-6 cursor-pointer items-center justify-center rounded-full bg-primary hover:bg-secondary">
           {cancel}
         </div>
