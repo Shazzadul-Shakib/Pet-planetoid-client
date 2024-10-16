@@ -1,7 +1,9 @@
+import ChatList from "@/components/messages/ChatList";
+
 const Messages: React.FC = () => {
   return (
-    <div>
-      Messages
+    <div className="h-[90dvh]">
+      <ChatList/>
     </div>
   );
 };

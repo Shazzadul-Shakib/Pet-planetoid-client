@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} relative h-[100dvh] antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} relative antialiased`}
       >
         <ThemeProvider
           attribute="class"
