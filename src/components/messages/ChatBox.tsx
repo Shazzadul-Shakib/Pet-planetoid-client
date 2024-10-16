@@ -7,7 +7,7 @@ const ChatBox: React.FC = () => {
   return (
     <div className="relative h-[calc(100dvh-130px)] w-full md:h-[calc(100dvh-70px)]">
       {/* User Info section - chat with whom */}
-      <div className="flex items-center gap-4 bg-secondary p-3 pb-0">
+      <div className="flex items-center gap-4 bg-secondary p-3">
         <div>
           <Image
             src="https://avatars.githubusercontent.com/u/124599?v=4"
@@ -23,7 +23,7 @@ const ChatBox: React.FC = () => {
       </div>
 
       {/* Messages secion */}
-      <div className="relative h-[calc(100dvh-195px)] overflow-y-auto border-l border-r border-secondary md:h-[calc(100dvh-130px)]">
+      <div className="relative h-[calc(100dvh-200px)] overflow-y-auto border-l border-r border-secondary md:h-[calc(100dvh-140px)]">
         {/* Message section */}
         <div className="absolute bottom-0 w-full pb-10">
           {/* Receiver's message */}
