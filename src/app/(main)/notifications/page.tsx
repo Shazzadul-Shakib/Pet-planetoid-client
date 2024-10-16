@@ -9,44 +9,6 @@ const Notifications: React.FC = () => {
         <NotificationCard />
         <Separator/>
         <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
-        <Separator/>
-        <NotificationCard />
       </Card>
     </div>
   );
