@@ -9,7 +9,7 @@ import { TCreatePostToggle } from "@/types";
 const CreatePostModalCard: React.FC<TCreatePostToggle> = ({ toggle }) => {
   const { cancel, media } = allIcons;
   return (
-    <Card className="relative min-h-[540px] w-11/12 max-w-[790px] rounded-lg p-3 shadow-lg">
+    <Card className="relative min-h-[540px] w-11/12 max-w-[590px] rounded-lg p-3 shadow-lg">
       <CardHeader className="-mt-4 flex flex-row justify-between">
         <div className="flex items-center gap-6">
           <div>
@@ -34,11 +34,23 @@ const CreatePostModalCard: React.FC<TCreatePostToggle> = ({ toggle }) => {
           </div>
         </div>
       </CardHeader>
-      <CardContent>
+      <CardContent className="h-[calc(540px-125px)] overflow-y-auto">
         <Textarea
-          className="h-80 resize-none py-3"
+          className="h-32 min-h-[60px] py-3"
           placeholder="What do you want to post about?"
         />
+        <div className="relative my-3 h-[500px] w-full overflow-hidden rounded-lg p-2">
+          <div className="absolute right-2 top-2 z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-primary hover:bg-secondary">
+            {cancel}
+          </div>
+          <Image
+            src="/cat.jpg"
+            alt="Avatar"
+            className="rounded-lg object-cover"
+            fill
+            quality={100}
+          />
+        </div>
       </CardContent>
       <CardFooter className="flex-col gap-3">
         <div className="flex w-full items-start px-2">
