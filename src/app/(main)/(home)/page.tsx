@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import CreatePost from "@/components/feed/CreatePost";
 import PostCard from "@/components/feed/PostCard";
 import useToggle from "@/hooks/useToggle";
@@ -13,7 +13,11 @@ const HomePage: React.FC = () => {
       <PostCard />
       <PostCard />
 
-      {isCreatePostModalOpen && <ModalBody modal={<CreatePostModalCard toggle={toggleCretePostModal} />} />}
+      {isCreatePostModalOpen && (
+        <ModalBody
+          modal={<CreatePostModalCard toggle={toggleCretePostModal} />}
+        />
+      )}
     </div>
   );
 };
