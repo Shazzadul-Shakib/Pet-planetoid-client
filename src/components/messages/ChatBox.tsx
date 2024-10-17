@@ -5,9 +5,9 @@ import Avatar from "../shared/Avatar";
 
 const ChatBox: React.FC = () => {
   return (
-    <div className="relative h-[calc(100dvh-130px)] w-full md:h-[calc(100dvh-70px)]">
+    <div className="relative mt-0.5 hidden h-[calc(100dvh-130px)] w-full md:block md:h-[calc(100dvh-70px)]">
       {/* User Info section - chat with whom */}
-      <div className="flex items-center gap-4 bg-secondary p-3">
+      <div className="flex items-center gap-4 bg-secondary p-2">
         <div>
           <Image
             src="https://avatars.githubusercontent.com/u/124599?v=4"

@@ -3,7 +3,7 @@ import ChatCard from "./ChatCard";
 
 const ChatList: React.FC = () => {
   return (
-    <div className="hidden h-full lg:block">
+    <div className="h-full w-full px-4 md:w-auto md:px-0">
       <div className="mb-3 py-3 shadow-md">
         <h1 className="mb-3 text-xl font-bold">Chats</h1>
         <Searchbar />
