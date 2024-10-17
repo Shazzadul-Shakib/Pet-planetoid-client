@@ -1,7 +1,9 @@
+import HeaderCard from "@/components/marketplace/HeaderCard";
+
 const MarketPlace: React.FC = () => {
   return (
-    <div>
-      marketplace
+    <div className=" mx-2 lg:mx-0">
+      <HeaderCard/>
     </div>
   );
 };
