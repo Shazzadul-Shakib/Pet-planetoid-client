@@ -23,7 +23,7 @@ const ChatBox: React.FC = () => {
       </div>
 
       {/* Messages secion */}
-      <div className="relative h-[calc(100dvh-200px)] overflow-y-auto border-l border-r border-secondary md:h-[calc(100dvh-140px)]">
+      <div className="relative h-[calc(100dvh-200px)] overflow-y-auto  border-secondary md:h-[calc(100dvh-140px)]">
         {/* Message section */}
         <div className="absolute bottom-0 w-full pb-10">
           {/* Receiver's message */}

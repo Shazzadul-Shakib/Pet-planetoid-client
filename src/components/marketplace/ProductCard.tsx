@@ -6,7 +6,7 @@ const ProductCard: React.FC = () => {
   const { taka } = allIcons;
   return (
     <Card className="max-h-[331px]">
-      <CardContent className="relative z-0 mb-2 h-[250px] overflow-hidden rounded-lg">
+      <CardContent className="relative z-0 mb-2 h-[250px] overflow-hidden rounded-t-lg">
         <Image
           src="/cat.jpg"
           fill
@@ -15,7 +15,7 @@ const ProductCard: React.FC = () => {
           className="z-[-1] h-full w-full object-cover"
         />
       </CardContent>
-      <CardFooter className="flex-col items-start">
+      <CardFooter className="flex-col items-start pt-2">
         <h2 className="text-md flex items-center font-semibold">
           BDT-100{taka}
         </h2>
