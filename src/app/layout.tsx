@@ -36,7 +36,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="system"
           enableSystem
-          disableTransitionOnChange
+          // disableTransitionOnChange
         >
           <BigScreenNavbar />
           <div className="mx-auto mt-16 max-w-[1200px]">{children}</div>

@@ -4,6 +4,7 @@ import {
   Ellipsis,
   House,
   MessageCircleMore,
+  MoveLeft,
   Store,
   Tag,
   X,
@@ -33,4 +34,5 @@ export const allIcons = {
   media: <GoFileMedia size={24} />,
   sell: <Tag size={14} />,
   taka: <TbCurrencyTaka size={20} />,
+  back:<MoveLeft size={20}/>
 };

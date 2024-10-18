@@ -39,7 +39,7 @@ const CreatePostModalCard: React.FC<TCreatePostToggle> = ({ toggle }) => {
           className="h-32 min-h-[60px] py-3"
           placeholder="What do you want to post about?"
         />
-        <div className="relative my-3 h-[500px] w-full overflow-hidden rounded-lg p-2">
+        <div className="relative my-3 h-[300px] sm:h-[500px] w-full overflow-hidden rounded-lg p-2">
           <div className="absolute right-2 top-2 z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-primary hover:bg-secondary">
             {cancel}
           </div>
@@ -48,6 +48,7 @@ const CreatePostModalCard: React.FC<TCreatePostToggle> = ({ toggle }) => {
             alt="Avatar"
             className="rounded-lg object-cover"
             fill
+            priority
             quality={100}
           />
         </div>
