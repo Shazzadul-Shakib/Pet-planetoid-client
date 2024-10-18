@@ -1,21 +1,9 @@
 // RootLayout.tsx
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import BigScreenNavbar from "@/components/Navbar/BigScreenNavbar";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import SmallScreenNavbar from "@/components/Navbar/SmallScreenNavbar";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Pet Planetoid",
@@ -29,9 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} relative antialiased`}
-      >
+      <body className={`relative antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
