@@ -29,7 +29,7 @@ const ChatBox: React.FC<{ visible: boolean; close: () => void }> = ({
             <h1 className="text-md font-semibold">User Name</h1>
           </div>
         </div>
-        <div className="cursor-pointer" onClick={close}>
+        <div className="cursor-pointer md:hidden" onClick={close}>
           {back}
         </div>
       </div>
